@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHÁT HIỆN HÀNH ĐỘNG TÉ NGÃ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PHÁT HIỆN HÀNH ĐỘNG TÉ NGÃ</h1>
+        <div class="status">
+            <h2>Hành động hiện tại:</h2>
+            <p id="action">Đang chờ dữ liệu...</p>
+        </div>
+
+        <h2>Biểu đồ dữ liệu cảm biến</h2>
+        <canvas id="sensorChart"></canvas>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
