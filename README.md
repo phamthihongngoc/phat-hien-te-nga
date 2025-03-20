@@ -192,7 +192,7 @@ Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cầ
 
 ## 📰 Poster
 <p align="center">
-  <img src="D:/AIOT/BTL/images/Poster_Group3-CNTT1604.pngpng" alt="System Architecture" width="800"/>
+  <img src="images/Poster_Group3-CNTT1604.pngpng" alt="System Architecture" width="800"/>
 </p>
 
 ## 🤝 Đóng góp
