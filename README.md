@@ -121,7 +121,9 @@ Cài đặt các thư viện bằng lệnh:
 ## 🧮 Bảng mạch
 
 ### 🔩 Kết nối phần cứng:
-<img src="D:/AIOT/BTL/images/sodothietbiithudulieu.jpg" alt="System Architecture" width="800"/>
+<img src="https://github.com/user-attachments/assets/2a59db02-a924-408e-a786-d0a97d6dda8f" width="300">
+
+
 
 ### ⛓️‍💥 Hướng dẫn cắm dây
 | Thiết bị        | Chân trên thiết bị | Kết nối ESP32ESP32 | Ghi chú                         |
@@ -141,59 +143,60 @@ Cài đặt các thư viện bằng lệnh:
 
 Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cần thiết bằng pip.
 
-3️⃣ Cài đặt phần mềm.
-**Ở file Thu_du_lieu**
-    1. Mở **Arduino IDE** hoặc **PlatformIO**.
-    2. Cài đặt thư viện cần thiết.
-    3. Cập nhật thông tin WiFi.
-    4. Nạp code vào ESP32.
-    5. Mở Serial Monitor để xem địa chỉ Ip.
-    6. Dùng trình duyệt truy cập vào địa chỉ IP của ESP32.
-    7. Trang web server cho phép người dùng bắt đầu/dừng ghi dữ liệu với nhãn hành động cụ thể. Dữ liệu cảm biến cũng được hiển thị theo thời gian thực trên web.Khi bộ đệm đầy, dữ liệu được ghi vào file để tối ưu hiệu suất. Chúng ta sẽ tải file CSV qua nút "Download" trên web.
-**Trên file Xu_ly_du_lieu**
-    1.Đọc dữ liệu từ file CSV.
-    2. Lọc các hoạt động hợp lệ.
-    3. Chuẩn hóa dữ liệu.
-    4. Mã hóa nhãn hoạt động.
-    5. Tạo cửa sổ trượt (Sliding Window).
-    6. Xử lý mất cân bằng dữ liệu (SMOTE).
-    7. Lưu dữ liệu đã cân bằng.
-    8. Kiểm tra số lượng mẫu theo từng nhãn sau khi cân bằng.
-**Truc_quan_hoa_du_lieu**
-    1. Đọc dữ liệu từ file CSV.
-    2. Hiển thị từng biểu đồ theo từng loại hành động. 
-**Huấn luyện mô hình CNN + LSTM**
-    1. Huấn luyện trên Google Colab.
-    2. Thực hiện các bước huấn luyện mô hình như file "tranining model.txt".
-    3. Lưu mô hình "fall_detection_model.h5" đã huấn luyện vào folder "test" để thực nghiệm đánh giá kết quả.
-**Chay hệ thống**
-1. **Chạy esp32.ino**
-    - Mở **Arduino IDE** hoặc **PlatformIO**.
-    - Cài đặt các thư viện cần thiết.
-    - Cập nhật thông tin WiFi.
-    - Nạp code vào ESP32.
-    - Dữ liệu được gửi đến server Flask (http://192.168.137.1:5000/sensor) bằng HTTP POST, nhận phản hồi từ server và hiển thị lên Serial Monitor. 
-2. **Chạy flask_server.py** trên máy tính.
-    - Cài đặt các thư viện cần thiết.
-    - Chạy code "python flask_server.py"
-    - Dùng trình duyệt truy cập vào (http://127.0.0.1:5000)
-    -Hiển thị gigiao diện web: trạng thái mới nhất từ cảm biến và biểu đồ cảm biến cập nhật dữ liệu theo thời gian thực.
-    -  Sau đó "Nhận cảnh báo" khi té ngã qua Telegram.
+### 3️⃣ Cài đặt phần mềm  
+
+#### 📌 Thu_du_lieu  
+1. Mở **Arduino IDE** hoặc **PlatformIO**.  
+2. Cài đặt thư viện cần thiết.  
+3. Cập nhật thông tin **WiFi**.  
+4. Nạp code vào **ESP32**.  
+5. Mở **Serial Monitor** để xem địa chỉ IP.  
+6. Dùng trình duyệt truy cập vào địa chỉ IP của ESP32.  
+7. Trang **web server** hiển thị dữ liệu theo thời gian thực và cho phép **bắt đầu/dừng ghi dữ liệu**.  
+8. Khi bộ đệm đầy, dữ liệu được ghi vào file để tối ưu hiệu suất.  
+9. Tải file **CSV** qua nút `"Download"` trên web.  
+
+#### 📌 Xu_ly_du_lieu  
+1. Đọc dữ liệu từ file **CSV**.  
+2. Lọc các hoạt động hợp lệ.  
+3. Chuẩn hóa dữ liệu.  
+4. Mã hóa nhãn hoạt động.  
+5. Tạo **cửa sổ trượt (Sliding Window)**.  
+6. Xử lý mất cân bằng dữ liệu (**SMOTE**).  
+7. Lưu dữ liệu đã cân bằng.  
+8. Kiểm tra số lượng mẫu theo từng nhãn sau khi cân bằng.  
+
+#### 📌 Truc_quan_hoa_du_lieu  
+1. Đọc dữ liệu từ file **CSV**.  
+2. Hiển thị biểu đồ theo từng loại hành động.  
+
+#### 📌 Huấn luyện mô hình **CNN + LSTM**  
+1. Huấn luyện trên **Google Colab**.  
+2. Thực hiện theo hướng dẫn trong `"training model.txt"`.  
+3. Lưu mô hình **"fall_detection_model.h5"** vào folder `"test"` để đánh giá kết quả.  
+
+#### 📌 Chạy hệ thống  
+1. Tải mô hình đã huấn luyện.  
+2. Nhận dữ liệu từ **ESP32**.  
+3. Dự đoán hành động và hiển thị kết quả.  
 
 ## ⚙️ Cấu hình & Ghi chú
 
 1. Cổng ESP32: 
 - Mặc định sử dụng COM55. 
-2. Gửi tin nhắn cảnh báobáo:
-- Trong `flask_server.py`, cập nhật thông tin *TELEGRAM_BOT_TOKEN* và *TELEGRAM_CHAT_ID*.(TELEGRAM_BOT_TOKEN là bot của tài khoảnkhoản Telegram, TELEGRAM_CHAT_ID là mã id của tài khoản Telegram.)
+### Cấu hình Telegram trong `flask_server.py`  
+1. Cập nhật thông tin **Telegram Bot**:  
+   - `TELEGRAM_BOT_TOKEN`: Token của bot Telegram.  
+   - `TELEGRAM_CHAT_ID`: Mã ID của tài khoản Telegram.  
+
 3. Thời gian gửi tin nhắn thông báo: cập nhật hành động ngã mới nhất sau sau 2 giây.
 4. Môi trường mạng: 
 - Thiết bị esp32 cần kết nối cùng mạng với máy chủ.
 
 ## 📰 Poster
-<p align="center">
-  <img src="images/Poster_Group3-CNTT1604.pngpng" alt="System Architecture" width="800"/>
-</p>
+![Poster_Group3-CNTT1604](https://github.com/user-attachments/assets/1bdc36ee-55a4-4208-b89d-b2c73969059d)
+
+
 
 ## 🤝 Đóng góp
 Dự án được phát triển bởi 4 thành viên:
