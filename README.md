@@ -1,4 +1,4 @@
-# HỆ THỐNG GIÁM SÁT VÀ PHÂN TÍCH HÀNH ĐỘNG TÉ NGÃ
+<h1 align="center">HỆ THỐNG GIÁM SÁT VÀ PHÂN TÍCH HÀNH ĐỘNG TÉ NGÃ</h1>
 
 <p align="center">
   <img src="images/logoDaiNam.png" alt="DaiNam University Logo" width="200"/>
