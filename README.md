@@ -208,4 +208,4 @@ Dự án được phát triển bởi 4 thành viên:
 | Nguyễn Đào Nguyên Giáp | Thuyết trình, hỗ trợ bài tập lớn.  |
 | Nguyễn Hải Phong       | Hỗ trợ bài tập lớn. |
 
-© 2025 NHÓM 3, CNTT16-04, TRƯỜNG ĐẠI HỌC ĐẠI NAM
+© 2025 NHÓM 3, CNTT 16-04, TRƯỜNG ĐẠI HỌC ĐẠI NAM
