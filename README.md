@@ -13,7 +13,7 @@
 
 </div>
 
-## 🌟 Giới thiệu
+## 1. 🌟 Giới thiệu
 
 Hệ thống giám sát và phân tích hành động té ngã là một dự án tích hợp giữa phần cứng (**ESP32, MPU6050**) và phần mềm (**Python, Flask, AI**) để phân tích hành động té ngã. Hệ thống thu thập dữ liệu từ cảm biến, gửi đến **ESP32**, xử lý và truyền qua HTTP đến máy chủ. **Dữ liệu sẽ được lưu trữ và phân tích bằng mô hình học sâu CNN + LSTM** để nhận diện hành động. Kết quả hiển thị trên giao diện web và gửi cảnh báo qua **Telegram**.
 
@@ -27,7 +27,7 @@ Hệ thống giám sát và phân tích hành động té ngã là một dự á
 
 ---
 
-## 🚀 Hướng dẫn cài đặt và chạy hệ thống
+## 2. 🚀 Hướng dẫn cài đặt và chạy hệ thống
 
 ### 1️⃣ Chuẩn bị phần cứng
     1. Kết Nối **MPU6050** với **ESP32** qua giao thức I2C.
@@ -84,7 +84,7 @@ pip install numpy tensorflow flask pandas matplotlib requests
     - Sau đó "Nhận cảnh báo" khi té ngã qua Telegram.
 
 
-## 🛠️ CÔNG NGHỆ SỬ DỤNG
+## 3. 🛠️ CÔNG NGHỆ SỬ DỤNG
 
 <div align="center">
 
@@ -102,7 +102,7 @@ pip install numpy tensorflow flask pandas matplotlib requests
 
 </div>
 
-## 🛠️ Yêu cầu hệ thống
+## 4. 🛠️ Yêu cầu hệ thống
 
 ### 🔌 Phần cứng
 - **ESP32** (hoặc board tương thích) với **MPU6050**.
@@ -133,7 +133,7 @@ Cài đặt các thư viện bằng lệnh:
 |ESP32     | -                 | -                   | Vi điền khiển chínhchính |
 | 5 dây điện      | -                 | -                   | Dùng để nối các linh kiện       |
 
-## 🚀 Hướng dẫn cài đặt và chạy hệ thống.
+## 5. 🚀 Hướng dẫn cài đặt và chạy hệ thống.
 1️⃣ Chuẩn bị phần cứng
     1. Kết Nối 
     **MPU6050** với **ESP32** qua giao thức I2C.
@@ -180,7 +180,7 @@ Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cầ
 2. Nhận dữ liệu từ **ESP32**.  
 3. Dự đoán hành động và hiển thị kết quả.  
 
-## ⚙️ Cấu hình & Ghi chú
+## 5. ⚙️ Cấu hình & Ghi chú
 
 1. Cổng ESP32: 
 - Mặc định sử dụng COM55. 
@@ -193,12 +193,12 @@ Cài đặt Python 3 nếu chưa có, sau đó cài đặt các thư viện cầ
 4. Môi trường mạng: 
 - Thiết bị esp32 cần kết nối cùng mạng với máy chủ.
 
-## 📰 Poster
+## 6. 📰 Poster
 ![Poster_Group3-CNTT1604](https://github.com/user-attachments/assets/1bdc36ee-55a4-4208-b89d-b2c73969059d)
 
 
 
-## 🤝 Đóng góp
+## 7. 🤝 Đóng góp
 Dự án được phát triển bởi 4 thành viên:
 
 | Họ và Tên              | Vai trò                  |
